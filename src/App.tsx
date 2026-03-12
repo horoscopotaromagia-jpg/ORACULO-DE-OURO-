@@ -76,7 +76,7 @@ export default function App() {
             >
               <a 
                 href={whatsappUrl}
-                className="inline-flex items-center gap-3 bg-gold hover:bg-gold-dark text-mystic-dark px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-lg shadow-gold/20"
+                className="inline-flex items-center gap-3 bg-mystic-blue hover:bg-mystic-blue-light text-gold px-10 py-5 rounded-full font-bold text-sm uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-lg shadow-gold/10 border border-gold/30"
               >
                 <MessageCircle className="w-5 h-5" />
                 Quero Revelar Meu Destino Agora
@@ -87,28 +87,29 @@ export default function App() {
         </section>
 
         {/* Features / Benefits */}
-        <section className="py-24 px-6 bg-mystic-violet/5">
-          <div className="max-w-6xl mx-auto mb-16 text-center">
+        <section className="py-24 px-6 relative overflow-hidden">
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-mystic-violet/10 to-transparent pointer-events-none" />
+          <div className="max-w-6xl mx-auto mb-16 text-center relative z-10">
             <h2 className="serif text-4xl md:text-5xl font-light mb-6">Por que buscar uma Consulta Online com O Oráculo de Ouro?</h2>
           </div>
-          <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12">
-            <div className="glass-card p-8 rounded-2xl border-mystic-violet/20">
-              <Sparkles className="text-gold w-8 h-8 mb-6" />
-              <h3 className="serif text-2xl mb-4">Tarô de Revelação e Autoconhecimento</h3>
+          <div className="max-w-6xl mx-auto grid md:grid-cols-3 gap-12 relative z-10">
+            <div className="glass-card p-8 rounded-2xl border-gold/20 hover:border-gold/40 transition-colors group">
+              <Sparkles className="text-gold w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
+              <h3 className="serif text-2xl mb-4 gold-gradient">Tarô de Revelação e Autoconhecimento</h3>
               <p className="text-mystic-paper/50 text-sm leading-relaxed">
                 Leitura de cartas para autoconhecimento profundo. Não apenas previsões, mas um espelho da sua alma para identificar bloqueios energéticos e karmas familiares.
               </p>
             </div>
-            <div className="glass-card p-8 rounded-2xl border-mystic-emerald/30 bg-mystic-emerald/5">
-              <Scroll className="text-gold w-8 h-8 mb-6" />
-              <h3 className="serif text-2xl mb-4">Limpeza Energética e Cura Espiritual</h3>
+            <div className="glass-card p-8 rounded-2xl border-gold/20 hover:border-gold/40 transition-colors group bg-mystic-emerald/5">
+              <Scroll className="text-gold w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
+              <h3 className="serif text-2xl mb-4 gold-gradient">Limpeza Energética e Cura Espiritual</h3>
               <p className="text-mystic-paper/50 text-sm leading-relaxed">
                 Saiba como fazer limpeza energética espiritual. Processos de realinhamento dos chakras para restaurar sua paz interior e equilíbrio emocional.
               </p>
             </div>
-            <div className="glass-card p-8 rounded-2xl border-mystic-blue/30 bg-mystic-blue/5">
-              <ShieldCheck className="text-gold w-8 h-8 mb-6" />
-              <h3 className="serif text-2xl mb-4">Acolhimento Ético e Profissional</h3>
+            <div className="glass-card p-8 rounded-2xl border-gold/20 hover:border-gold/40 transition-colors group bg-mystic-blue/5">
+              <ShieldCheck className="text-gold w-8 h-8 mb-6 group-hover:scale-110 transition-transform" />
+              <h3 className="serif text-2xl mb-4 gold-gradient">Acolhimento Ético e Profissional</h3>
               <p className="text-mystic-paper/50 text-sm leading-relaxed">
                 Atendimento esotérico profissional via WhatsApp. Um espaço seguro, livre de julgamentos, focado na sua autoridade espiritual e bem-estar.
               </p>
@@ -117,10 +118,10 @@ export default function App() {
         </section>
 
         {/* E-E-A-T Section */}
-        <section className="py-24 px-6 bg-mystic-blue/10">
-          <div className="max-w-4xl mx-auto text-center">
+        <section className="py-24 px-6 bg-gradient-to-r from-mystic-blue/20 via-mystic-violet/10 to-mystic-blue/20 relative">
+          <div className="max-w-4xl mx-auto text-center relative z-10">
             <h2 className="serif text-4xl md:text-5xl font-light mb-12">Sobre O Oráculo de Ouro: Autoridade e Confiança</h2>
-            <div className="glass-card p-10 rounded-3xl text-left border-gold/20 shadow-2xl shadow-mystic-blue/20">
+            <div className="glass-card p-10 rounded-3xl text-left border-gold/30 shadow-2xl shadow-mystic-blue/30 bg-mystic-dark/40">
               <p className="text-mystic-paper/80 text-lg leading-relaxed font-light italic">
                 "Com mais de 15 anos de dedicação ao estudo das artes esotéricas e sabedorias ancestrais, O Oráculo de Ouro consolidou-se como uma autoridade em Cura da Alma e Tarô Terapêutico. Nossa prática é fundamentada em ética rigorosa e acolhimento profundo, tendo guiado milhares de consulentes em processos de autoconhecimento e superação de bloqueios energéticos. Especialista em decifrar os mistérios do inconsciente através das cartas, oferecemos uma orientação segura e profissional para quem busca não apenas previsões, mas uma verdadeira transformação espiritual e emocional."
               </p>
@@ -173,16 +174,16 @@ export default function App() {
         </section>
 
         {/* Final CTA */}
-        <section className="py-24 px-6 bg-gold/5 relative overflow-hidden">
-          <div className="absolute inset-0 opacity-10 pointer-events-none">
-            <div className="absolute top-0 left-0 w-full h-full bg-[url('https://www.transparenttextures.com/patterns/stardust.png')]" />
+        <section className="py-32 px-6 bg-mystic-blue/20 relative overflow-hidden border-y border-gold/10">
+          <div className="absolute inset-0 opacity-20 pointer-events-none">
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-mystic-violet/30 rounded-full blur-[120px]" />
           </div>
           <div className="max-w-3xl mx-auto text-center relative z-10">
             <h2 className="serif text-4xl md:text-6xl mb-8 font-light">Agende sua Consulta via WhatsApp</h2>
             <p className="text-mystic-paper/60 mb-12 text-lg">O Universo está tentando falar com você. Você está pronto para ouvir?</p>
             <a 
               href={whatsappUrl}
-              className="inline-flex items-center gap-3 bg-gold hover:bg-gold-dark text-mystic-dark px-12 py-6 rounded-full font-bold text-base uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-gold/30"
+              className="inline-flex items-center gap-3 bg-mystic-blue hover:bg-mystic-blue-light text-gold px-12 py-6 rounded-full font-bold text-base uppercase tracking-widest transition-all hover:scale-105 active:scale-95 shadow-2xl shadow-gold/20 border border-gold/40"
             >
               <MessageCircle className="w-6 h-6" />
               Falar com O Oráculo no WhatsApp
